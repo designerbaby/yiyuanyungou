@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-touch-fullscreen" content="YES">
+    <title>一元云购</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    </head>
+<body class="g-acc-bg"> 
+    <div class="feedback-inner">
+        <textarea  id="txtContent" class="back-info" placeholder="欢迎您给我们留下宝贵的意见！" maxlength="200"></textarea>
+        <input id="txtInfo" type="text" class="back-find" placeholder="请输入联系方式，如手机号、邮箱、QQ等" maxlength="20">
+        <a id="btnSuggestion" class="back-btn">提交</a>
+    </div>
+    <div id="sugDialog" class="sugDialog">
+        <div class="Prompt">反馈意见或者联系方式不能为空</div>
+    </div>
+    <script type="text/javascript">
+        $("#btnSuggestion").click(function(){
+            var txtContent = $("#txtContent").val();
+            var txtInfo = $("#txtInfo").val();
+            if(txtContent == "" || txtInfo == ""){
+                $("#sugDialog").show(200).delay(1000).hide(300); 
+            }else{//获取信息存储到后台！！！
+
+            }
+        });
+    </script>
+</body>
+</html>
