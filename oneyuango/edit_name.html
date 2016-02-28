@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-touch-fullscreen" content="YES">
+    <title>一元云购</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+	<body style="background-color: #f7f7f7;zoom:1;">    <!-- 未传值到上一个页面 -->
+	    <div class="edit-wrapper">
+	        <input name="txtUserName" type="text" id="txtUserName" class="inp-info" maxlength="25" value="janna62" />
+	        <p class="txt">昵称长度为2-20个字符，由汉字、字母、数字或"_"组成</p>
+	        <a id="btnT1" class="s-btn">保存</a>
+	    </div>
+	    <div id="edit_nameDialog" class="edit_nameDialog">昵称不合法</div>
+	    <div id="edit_namesuccess" class="edit_namesuccess"><i class="am-icon-check"></i>保存成功</div>
+	<script type="text/javascript">
+		$("#btnT1").click(function(){
+			var UserName =  $("#txtUserName").val(); 
+			var name_length = UserName.length;
+			//console.log(name_length);
+			if(name_length<2 || name_length >20 ){ //！！！还未匹配正则表达式
+				$("#edit_nameDialog").show(200).delay(1000).hide(300);  
+			}else{
+				$("#edit_namesuccess").show(200).delay(1000).hide(300); 
+			}
+		});
+		var getByteLen = function (val) {  //获取字符串的长度，拼音2个字符，字母一个字符
+		    var len = 0; 
+		    for (var i = 0; i < val.length; i++) { 
+		        if (val[i].match(/[^x00-xff]/ig) != null) //全角 
+		            len += 2; 
+		        else
+		            len += 1; 
+		    }; 
+		    return len; 
+		} 
+	</script>
+	</body>
+</html>

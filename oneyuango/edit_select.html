@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-touch-fullscreen" content="YES">
+    <title>一元云购</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    </head>
+<body style="background-color: #f7f7f7;zoom:1;">
+    <div class="edit-wrapper">
+            <ul class="briday address-list clearfix">
+                <li>
+                    <span class="year">
+                        <div class="num">--请选择--</div>
+                        <i class="am-icon-angle-down am-icon-sm s-icon"></i>
+                            <select  id="selProvince5" class="opt">
+                                <option value="0">--请选择--</option>
+                                <option value="2">安徽省</option>
+                                <option value="3">北京</option>
+                                <option value="4">福建省</option>
+                                <option value="5">甘肃省</option>
+                                <option value="6">广东省</option>
+                                <option value="7">贵州省</option>
+                            </select>
+                    </span>
+                </li>
+                <li>
+                    <span class="month">
+                        <div class="num">--请选择--</div>
+                        <i class="am-icon-angle-down am-icon-sm s-icon"></i>
+                            <select  id="selCity5" class="opt">
+                                <option value="0">潮州市</option>
+                                <option value="2">东莞市</option>
+                                <option value="3">佛山市</option>
+                                <option value="4">广州市</option>
+                                <option value="5">河源市</option>
+                                <option value="6">惠州市</option>
+                                <option value="7">江门市</option>
+                            </select>
+                    </span>
+                </li>
+            </ul>
+            <a id="btnT5" class="s-btn btn-loading-example">保存</a>
+    </div>
+    <div id="edit_namesuccess" class="edit_namesuccess"><i class="am-icon-check"></i>保存成功</div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/amazeui.min.js"></script>
+    <script type="text/javascript">
+            $(".btn-loading-example").click(function () {
+                var $btn = $(this);
+                $btn.button('loading');
+                setTimeout(function(){
+                    $("#edit_namesuccess").show(200).delay(1000).hide(300); 
+                    $btn.button('reset');
+                }, 1000);
+            });
+            $("#selProvince5").click(function(){
+                
+            });
+    </script>
+</body>
+</html>

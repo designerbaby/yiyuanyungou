@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-touch-fullscreen" content="YES">
+    <title>一元云购</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+	<body style="background-color: #f7f7f7;zoom:1;">
+		<div class="edit-wrapper">
+            <textarea name="txtSign" id="txtSign" class="inp-info" maxlength="200"></textarea>
+            <p class="txt">个性签名最多两百个字符</p>
+            <a id="btnT7" class="s-btn">保存</a>
+        </div>
+        <div id="edit_nameDialog" class="edit_nameDialog">昵称不合法</div>
+	    <div id="edit_namesuccess" class="edit_namesuccess"><i class="am-icon-check"></i>保存成功</div>
+        <script type="text/javascript">
+        	$("#btnT7").click(function(){
+        		//alert(1);
+				var UserQianming =  $("#txtSign").val(); 
+				var qm_length = UserQianming.length;
+				//console.log(name_length);
+				if(qm_length >200 ){ 
+					$("#edit_nameDialog").show(200).delay(1000).hide(300);  
+				}else{
+					$("#edit_namesuccess").show(200).delay(1000).hide(300); 
+				}
+			});
+        </script>
+	</body>
+</html>

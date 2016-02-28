@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-touch-fullscreen" content="YES">
+    <title>一元云购</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    </head>
+<body style="background-color: #f7f7f7;zoom:1;">
+    <div class="sub_nav">
+        <div class="link-wrapper">
+            <a href="edit_name.html">
+                <b>昵称</b>
+                <i class="am-icon-angle-right am-icon-sm"></i>
+                <span class="fr" id="edit_name">janna62</span>
+            </a>
+        </div>
+        <div class="link-wrapper">
+            <a id="selectSex">
+                <b>性别</b>
+                <i class="am-icon-angle-right am-icon-sm"></i>
+                <span class="fr">女</span>
+                <select id="selSex" class="sex fr" style="display: block"><!--获取select的option的值 -->
+                    <option value="1" selected="selected">女</option>
+                    <option value="2">男</option>
+                    <option value="3">保密</option>
+                </select>
+            </a>
+            <a>
+                <b>生日</b>
+                <i class="am-icon-angle-right am-icon-sm"></i>
+                <span class="fr" id="birth_span">1994-09-21</span>
+                <input id="dateBirth" type="date" value="1992-10-23" min="1951-01-01"  max="2011-02-20" class="date fr" style="display:block">
+            </a>
+            <a href="edit_phone.html">
+                <b>电话</b>
+                <i class="am-icon-angle-right am-icon-sm"></i>
+                <span class="fr">12345678</span>
+            </a>
+        </div>
+        <div class="link-wrapper">
+            <a href="edit_select.html">
+                <b>现居地</b>
+                <i class="am-icon-angle-right am-icon-sm"></i>
+                <span class="fr">广州</span>
+            </a>
+            <a href="edit_select.html">
+                <b>家乡</b>
+                <i class="am-icon-angle-right am-icon-sm"></i>
+                <span class="fr">广州</span>
+            </a>
+        </div>
+        <div class="link-wrapper">
+            <a href="edit_qianming.html" class="underwrite">
+                <b>个性签名</b>
+                <i class="am-icon-angle-right am-icon-sm"></i>
+                <span class="fr">呀呀呀呀呀呀</span>
+            </a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+          var data_test = $("#dateBirth").value();
+          $("#birth_span").html(data_test);
+    </script>
+    
+</body>
+</html>
