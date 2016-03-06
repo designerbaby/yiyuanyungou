@@ -66,7 +66,7 @@ code+='var r=[];{\n';
 		}
 	}
 	code += '\n}\nreturn r.join("");';
-	console.log(code);
+	//console.log(code);
 	var func=new Function('',code);
 	//console.log(func);
 	return func;
