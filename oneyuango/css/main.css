@@ -167,6 +167,9 @@ em{
 .ui-progress{
 	height: 5px;
 }
+.product .ui-progress{
+	width:70%;
+}
 .ui-progress span{
 	background: #42ccb6;
 }
@@ -372,9 +375,10 @@ em{
 	height: 28px;
 	line-height: 28px;
 	text-align: center;
-	border: 1px solid red;
-	color: red;
-	border-radius: 16px;
+	border: 1px solid #42ccb6;
+	color: #ffffff;
+	border-radius: 15px;
+	background:#42ccb6;
 }
 .am-slider-default .am-control-nav li a.am-active {
 	background-color: #42ccb6;
@@ -386,11 +390,17 @@ em{
 .am-tabs-bd{
 	z-index: -50;
 }
+.product .am-tab-panel{
+	padding:0px;
+}
 .tabfixed{
 	position: fixed;
 	top:0;
 }
-
+.indexCenter{
+	width:85%;
+	margin:0 auto;
+}
 
 /*product.html*/
 .marginB{
