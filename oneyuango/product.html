@@ -24,38 +24,98 @@
     <footer class="am-topbar am-topbar-fixed-bottom" >
         <ul class="ui-tiled" style="font-size:14px;color:#666;">
             <a href="index.html"><li class="ui-border-r"><span class="am-icon-home am-icon-md"></span>首页</li></a>
-            <a href="product.html"><li class="ui-border-r active"><i class="am-icon-shopping-bag am-icon-sm"></i><div>最新揭晓</div></li></a>
+            <a href="product.html"><li class="ui-border-r active"><i class="am-icon-shopping-bag am-icon-sm"></i><div>商品</div></li></a>
             <a href="post.html"><li class="ui-border-r "><i class="am-icon-camera-retro am-icon-sm"></i><div>晒单</div></li></a>
             <a href="cart.html"><li class="ui-border-r "><span class="am-icon-shopping-cart am-icon-sm"></span><div>购物车</div></li></a>
             <a href="mine.html"><li><i class="am-icon-user-plus am-icon-sm"></i><div>我的</div></li></a>
         </ul>
     </footer>
-    <!-- header -->
-     <header class="ui-header ui-header-positive headh1" style="background-color: #ff0000!important;">
-        <a href="index.html"><i class="am-header-icon am-icon-home am-icon-sm"></i></a>
-        <h1>一元云购</h1>
-        <i class="am-header-icon am-icon-bars am-icon-sm" id="fenlei"></i>
-    </header>
-    <div class="ui-actionsheet">
-        <div class="ui-actionsheet-cnt">
-            <ul class="ui-list ui-list-text ui-list-cover">
-                    <li class="ui-border-t" data-href="product-list-2.html">
-                        <span>手机数码</span>
-                    </li>
-                                <li class="ui-border-t" data-href="product-list-3.html">
-                        <span>家用电器</span>
-                    </li>
-                                <li class="ui-border-t" data-href="product-list-4.html">
-                        <span>化妆个护</span>
-                    </li>
-                                <li class="ui-border-t" data-href="product-list-5.html">
-                        <span>日常生活</span>
-                    </li>
-                                <li class="ui-border-t" data-href="product-list-6.html">
-                        <span>美森造型</span>
-                    </li>
+    <div data-am-widget="tabs" class="am-tabs am-tabs-d2 am-no-layout">
+        <ul class="am-tabs-nav am-cf">
+            <li class="am-active"><a href="[data-tab-panel-0]">全部分类</a></li>
+            <li class=""><a href="[data-tab-panel-1]">即将揭晓</a></li>
+            <li class=""><a href="[data-tab-panel-2]">已经揭晓</a></li>
+        </ul>
+        <div class="am-tabs-bd product">
+            <div data-tab-panel-0 class="am-tab-panel am-active">
+                <div class="revCon" id="divLottery">
+                    <ul class="rNow">
+                        <li class="revConL"><img src="images/1.jpg" alt="产品"><cite><em>第100云</em><i></i></cite></li>
+                        <li class="revConR">
+                            <h4>伊利 安慕希常温酸牛奶 205mlx12盒 礼盒装</h4>
+                            <h5>价值：￥62.00</h5>
+                        </li>
+                        <div class="ui-progress ui-border-radius" style="margin:3px 10px 5px 0;">
+                            <span style="width:96.5%"></span>
+                        </div>
+                        <ul class="ui-row ui-txt-info ui-fontsize-14" style="line-height:120%;">
+                            <li class="ui-col ui-col-33" style="text-align:left;"><span class="ui-txt-red">2788</span><br/>已参与</li>
+                            <li class="ui-col ui-col-33" style="text-align:center;">2888<br/>总需份数</li>
+                            <li class="ui-col ui-col-33" style="text-align:right;">100<br/>剩余</li>
                         </ul>
-            <button class="ui-actionsheet-cancel">取消</button>
+                        <div class="rNowTitle">即将揭晓</div>
+                    </ul>
+                </div>
+                <div class="revCon" id="divLottery">
+                    <ul class="rNow">
+                        <li class="revConL"><img src="images/1.jpg" alt="产品"><cite><em>第100云</em><i></i></cite></li>
+                        <li class="revConR">
+                            <h4>伊利 安慕希常温酸牛奶 205mlx12盒 礼盒装</h4>
+                            <h5>价值：￥62.00</h5>
+                        </li>
+                        <div class="ui-progress ui-border-radius" style="margin:3px 10px 5px 0;">
+                            <span style="width:96.5%"></span>
+                        </div>
+                        <ul class="ui-row ui-txt-info ui-fontsize-14" style="line-height:120%;">
+                            <li class="ui-col ui-col-33" style="text-align:left;"><span class="ui-txt-red">2788</span><br/>已参与</li>
+                            <li class="ui-col ui-col-33" style="text-align:center;">2888<br/>总需份数</li>
+                            <li class="ui-col ui-col-33" style="text-align:right;">100<br/>剩余</li>
+                        </ul>
+                        <div class="rNowTitle">已经揭晓</div>
+                    </ul>
+                </div>
+            </div>
+
+            <div data-tab-panel-1 class="am-tab-panel ">
+                <div class="revCon" id="divLottery">
+                    <ul class="rNow">
+                        <li class="revConL"><img src="images/1.jpg" alt="产品"><cite><em>第100云</em><i></i></cite></li>
+                        <li class="revConR">
+                            <h4>伊利 安慕希常温酸牛奶 205mlx12盒 礼盒装</h4>
+                            <h5>价值：￥62.00</h5> 
+                        </li>
+                        <div class="ui-progress ui-border-radius" style="margin:3px 10px 5px 0;">
+                            <span style="width:96.5%"></span>
+                        </div>
+                        <ul class="ui-row ui-txt-info ui-fontsize-14" style="line-height:120%;">
+                            <li class="ui-col ui-col-33" style="text-align:left;"><span class="ui-txt-red">2788</span><br/>已参与</li>
+                            <li class="ui-col ui-col-33" style="text-align:center;">2888<br/>总需份数</li>
+                            <li class="ui-col ui-col-33" style="text-align:right;">100<br/>剩余</li>
+                        </ul>
+                        <div class="rNowTitle">即将揭晓</div>
+                    </ul>
+                </div>
+            </div>
+            <div data-tab-panel-2 class="am-tab-panel ">
+                <div class="revCon" id="divLottery">
+                    <ul class="rNow">
+                        <li class="revConL"><img src="images/1.jpg" alt="产品"><cite><em>第100云</em><i></i></cite></li>
+                        <li class="revConR">
+                            <h4>伊利 安慕希常温酸牛奶 205mlx12盒 礼盒装</h4>
+                            <h5>价值：￥62.00</h5>
+                        </li>
+                        <div class="ui-progress ui-border-radius" style="margin:3px 10px 5px 0;">
+                            <span style="width:96.5%"></span>
+                        </div>
+                        <ul class="ui-row ui-txt-info ui-fontsize-14" style="line-height:120%;">
+                            <li class="ui-col ui-col-33" style="text-align:left;"><span class="ui-txt-red">2788</span><br/>已参与</li>
+                            <li class="ui-col ui-col-33" style="text-align:center;">2888<br/>总需份数</li>
+                            <li class="ui-col ui-col-33" style="text-align:right;">100<br/>剩余</li>
+                        </ul>
+                        <div class="rNowTitle">已经揭晓</div>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <!-- topbtn -->
@@ -68,26 +128,29 @@
             </li>
         </ul>   
     </div>
-   
-    <div class="marginB">
-        <div class="revCon" id="divLottery">
-            <ul class="rNow">
-                <li class="revConL"><img src="images/1.jpg" alt="产品"><cite><em>第100云</em><i></i></cite></li>
-                <li class="revConR">
-                    <h4>伊利 安慕希常温酸牛奶 205mlx12盒 礼盒装</h4>
-                    <h5>价值：￥62.00</h5>
-                    <p name="pTime">
-                        <s class="clock"></s>揭晓倒计时
-                        <strong>
-                            <em>01</em>:<em>17</em>:<em><i>5</i><i>4</i></em>
-                        </strong>
-                    </p>
-                </li>
-                <div class="rNowTitle">正在揭晓</div>
+    <!-- 类别区分 -->
+    <div class="ui-actionsheet">
+        <div class="ui-actionsheet-cnt">
+            <ul class="ui-list ui-list-text ui-list-cover">
+                    <li class="ui-border-t" data-href="">
+                        <span>手机数码</span>
+                    </li>
+                    <li class="ui-border-t" data-href="">
+                        <span>家用电器</span>
+                    </li>
+                    <li class="ui-border-t" data-href="">
+                        <span>化妆个护</span>
+                    </li>
+                    <li class="ui-border-t" data-href="">
+                        <span>日常生活</span>
+                    </li>
+                    <li class="ui-border-t" data-href="">
+                        <span>美森造型</span>
+                    </li>
             </ul>
+            <button class="ui-actionsheet-cancel">取消</button>
         </div>
     </div>
-
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/amazeui.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
